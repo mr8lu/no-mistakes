@@ -605,6 +605,8 @@ func NewWithOptions(name types.AgentName, bin string, extraArgs []string, opts O
 	switch name {
 	case types.AgentClaude:
 		return &claudeAgent{bin: bin, extraArgs: extraArgs}, nil
+	case types.AgentGemini:
+		return &geminiAgent{bin: bin, extraArgs: extraArgs}, nil
 	case types.AgentCodex:
 		return &codexAgent{bin: bin, extraArgs: extraArgs}, nil
 	case types.AgentRovoDev:
@@ -616,7 +618,7 @@ func NewWithOptions(name types.AgentName, bin string, extraArgs []string, opts O
 	case types.AgentCopilot:
 		return &copilotAgent{bin: bin, extraArgs: extraArgs}, nil
 	default:
-		return nil, fmt.Errorf("unknown agent %q; valid options: auto, claude, codex, rovodev, opencode, pi, copilot, acp:<target> (set 'agent' in ~/.no-mistakes/config.yaml)", name)
+		return nil, fmt.Errorf("unknown agent %q; valid options: auto, claude, gemini, codex, rovodev, opencode, pi, copilot, acp:<target> (set 'agent' in ~/.no-mistakes/config.yaml)", name)
 	}
 }
 
