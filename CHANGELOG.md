@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.34.1](https://github.com/kunchenguid/no-mistakes/compare/v1.34.0...v1.34.1) (2026-07-08)
+
+
+### Bug Fixes
+
+* **daemon:** bound IPC connect attempts with a configurable timeout ([#403](https://github.com/kunchenguid/no-mistakes/issues/403)) ([c663aee](https://github.com/kunchenguid/no-mistakes/commit/c663aeee95d34b07351c3a0fbd105acbfcf5ac3a))
+* **update:** make --version a side-effect-free read-only probe ([#423](https://github.com/kunchenguid/no-mistakes/issues/423)) ([65e37bc](https://github.com/kunchenguid/no-mistakes/commit/65e37bcce93507fea3680abd28bcb9f0ace1b077))
+* **winproc:** suppress console window flashing for child processes on windows ([#418](https://github.com/kunchenguid/no-mistakes/issues/418)) ([7625211](https://github.com/kunchenguid/no-mistakes/commit/7625211125c399c9665ff7e7edc1dd8aa17af075))
+
 ## [1.34.0](https://github.com/kunchenguid/no-mistakes/compare/v1.33.0...v1.34.0) (2026-07-07)
 
 
